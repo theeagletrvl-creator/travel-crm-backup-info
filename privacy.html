@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy notice for Eagle Travel's Travel CRM Recovery Backup utility and its limited Google Drive connection.">
+  <title>Privacy notice · Travel CRM Recovery Backup</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="./"><span class="brand-mark" aria-hidden="true">ET</span><span>Eagle Travel<small>Backup utility information</small></span></a>
+    <nav aria-label="Main navigation"><a href="./">Overview</a><a href="privacy.html" aria-current="page">Privacy notice</a></nav>
+  </header>
+  <main id="main" class="wrap policy">
+    <p class="eyebrow">Travel CRM Recovery Backup</p>
+    <h1>Privacy notice</h1>
+    <p class="lead">This notice covers Eagle Travel's owner-operated backup utility only. It does not replace the live CRM's privacy policy.</p>
+    <p class="updated">Last updated: October 26, 2026</p>
+    <aside class="status"><strong>Current status:</strong> Connection setup is in progress. Scheduled backup processing is not enabled. The practices below describe this utility when the connection and individual workflow are approved and enabled.</aside>
+    <section><h2>Operator and purpose</h2><p>Eagle Travel operates this utility to preserve approved project and recovery material for its own business. Contact: <a href="mailto:theeagletrvl@gmail.com">theeagletrvl@gmail.com</a>.</p></section>
+    <section><h2>Google Drive access</h2><p>The utility requests only <code>https://www.googleapis.com/auth/drive.file</code>. This permits access to specific Drive files explicitly selected for the app or created by it, rather than general access to the owner's Drive. The intended destination is a private, owner-controlled backup folder.</p><p>Within that permitted set, the utility uses file identifiers, folder association, sizes, checksums and encrypted file contents to upload and verify backups and avoid duplicate copies. It does not request Gmail access, Google passwords, or whole-Drive access.</p></section>
+    <section><h2>Processing and credential handling</h2><p>When enabled, a reviewed GitHub Actions workflow prepares approved recovery material, encrypts it before upload and verifies the resulting ciphertext. Dedicated connection credentials are intended to be stored as encrypted GitHub Actions secrets and used only by the restricted upload step. The private backup decryption key is not supplied to that workflow.</p><p>Backup contents may contain business or project information approved by the owner. They are not published on this website or in public repositories. Nonsecret verification receipts may record file identifiers, sizes, hashes, dates and success or failure status. They must exclude credentials and plaintext backup contents.</p></section>
+    <section><h2>Use and service providers</h2><p>Accessed data is used for the approved backup and recovery purpose. Eagle Travel does not sell this Google user data or use it for advertising or model training. Google Drive stores the backup files; GitHub provides the reviewed workflow processing and this information website. No additional recipient is configured by this setup.</p><p>These static information pages contain no forms, analytics scripts or tracking cookies added by Eagle Travel. The hosting provider may process ordinary request metadata under its own policies.</p></section>
+    <section><h2>Retention, deletion and revocation</h2><p>The owner controls backup retention and deletion in Drive. There is no automatic retention or deletion schedule enabled. Retained copies can remain until the owner removes them.</p><p>The owner can revoke this app's access through Google Account third-party permissions and remove its dedicated GitHub Actions secrets. Disconnecting the app does not itself delete existing backups. Deletion of copies from Drive, GitHub or other owner-controlled storage must be handled in the respective service.</p></section>
+    <section><h2>Limits and changes</h2><p>Encryption and limited permissions reduce exposure; they do not eliminate every risk or guarantee successful recovery. Recovery requires usable backups, the correct private recovery key and appropriate verification. Production database exports, restores and additional integrations require separate approval.</p><p>This notice will be reviewed if the utility's access, data handling or enabled processing changes. Questions or deletion requests may be sent to the business contact above.</p></section>
+    <p class="back-link"><a href="./">← Back to the overview</a></p>
+  </main>
+  <footer class="wrap"><p>Operated by Eagle Travel · <a href="mailto:theeagletrvl@gmail.com">theeagletrvl@gmail.com</a></p><p>Privacy notice for the backup app only.</p></footer>
+</body>
+</html>
